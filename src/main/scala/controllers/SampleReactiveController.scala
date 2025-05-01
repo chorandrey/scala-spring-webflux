@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono
 class SampleReactiveController {
 
   @GetMapping(Array("/hello"))
-  def sayHello: Mono[String] = {
+  def sayHello(): Mono[String] = {
 
     Mono.just("Hello from Spring WebFlux with Jetty!")
   }
